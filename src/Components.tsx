@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 
 export const MainPage = styled.div`
-    background-image: url("../../torcida-bg.jpeg");
+    background-image: url("./torcida-bg.jpeg");
     background-size:cover;
     display: flex;
     place-content: stretch center;

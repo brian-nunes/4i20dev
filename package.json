@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://brian-nunes.github.io/4i20dev/",
+  "homepage": "https://4i20.dev",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

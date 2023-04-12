@@ -57,7 +57,7 @@ function App() {
   useEffect(() => {
     if (!window.ethereum) {
       return setError(`Baixe a extensão do MetaMask para pegar sua NFT!`);
-    } else if(window.ethereum!._state!.accounts!.length > 0){
+    } else if(window.ethereum?._state?.accounts?.length > 0){
       handleOnClickConnect()
     } else {
       setIsLoading(false);

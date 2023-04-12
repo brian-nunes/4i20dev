@@ -62,11 +62,10 @@ function App() {
     } else {
       setIsLoading(false);
     }
-    new Audio('./hino.mp3').play()
   }, [])
 
   return (
-    <MainPage className="App">
+    <MainPage className="App" onMouseEnter={() => {new Audio('./hino.mp3').play()}}>
       {((!isConnected && !isLoading) || (isConnected && !isLoading && !hasNFT)) && <CongratsText>Parabéns! Você acaba de encontrar a NFT do Vasconha!</CongratsText>}
       {(isConnected && !isLoading && hasNFT) &&  <CongratsText>Você já faz parte da tropa do Vasconha!</CongratsText>}
       {(!isLoading && hasNFT) && <DataText>Contrato: {CONTRACT_ADDRESS} | Id: {tokenId.toString()}</DataText>}
